@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <script defer src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>LIBRARY</title>
+</head>
+<body>
+  <div class="header">
+    <header>
+      <h1> Virtual Library</h1>
+    </header>
+  </div>
+  <main class="main">
+    <button class="plus-btn"><i class="fas fa-plus-circle"></i></button>
+  <div class="container"></div>
+  </main>
+
+<div class="pop-up" data-pop>
+    <form class="pop-up-form">
+      <div class="pop-up-header">
+        <h2 class="title">Enter New Book</h2>
+      </div>
+        <input
+          class="form-inputs"
+          id="title" 
+          type="text" 
+          placeholder="Book Title" 
+          required
+        />
+        <input 
+          class="form-inputs"
+          id="author" 
+          type="text" 
+          placeholder="Book Author" 
+          required
+        />
+        <div class="pop-up-read">
+          <label class="is-read" for="is-read">Read?</label>
+          <input class="checkbox" type="checkbox" id="is-read" />
+        </div>
+        <button type="submit" class="submit-button" data-submit>Submit</button>
+    </form>
+  </div>
+  <div class="overlay" data-overlay></div>
+</body>
+</html>
